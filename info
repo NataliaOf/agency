@@ -1,0 +1,47 @@
+работаем в папке app
+
+дериктория src для рабочего проекта
+
+запуск gulp
+
+Создание спрайта 1)gulp images
+                 2) gulp sprite
+
+Работа с шрифтом 1) добавить в папку app/fonts скачаный шрифто
+                 2) команда к консоли gulp fonts    
+
+                 // Скачиваем шрифт
+                 //Конвертируем его в format('woff2')
+                 3)В файду style.scss  прописываем под каждый шрифт
+               
+               @font-face {
+                  font-family: $font-stack;
+                  src: url("../fonts/Poppins-Regular.woff2") format('woff2');
+                  font-weight: 400;
+                  font-style: normal;
+                  font-display:swap;
+               }
+
+Работа со спрайтом 1) Вставить в html код (правельно прописываем путь относительно папки src)
+                      <svg>
+                        <use xlink:href="../images/sprite.svg#adres"></use>
+                      </svg>             
+
+
+
+Создание продакшен версии gulp build
+
+
+
+
+        <picture>
+          <source type="imege/avif" srcset="../../images/living-room.avif">
+          <source type="imege/webp" srcset="../../images/living-room.webp">
+    
+          <img src="../../images/living-room.jpg" alt="livingroom" class="temukan__bg">
+        </picture>
+
+Работа с файлами: функция files в galpfile.js -> добавляем нужный файл и запускаем gulp files
+
+Добавление favicon -> https://favicon.io/favicon-converter/
+          Скачиваем иконку в форматк svg , конвертируем и добавляем в index (согласно инструкции)

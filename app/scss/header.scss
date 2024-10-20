@@ -1,0 +1,156 @@
+@import 'viriables.scss';
+@import 'mixin.scss';
+@import 'animation.scss';
+.burger{
+   display: none;
+   cursor: pointer;
+   padding: 3px;
+   color: #fff;
+   svg{
+      width: 50px;
+      height: 50px;
+      
+   }
+}
+.clouse_menu{
+   padding: 3px;
+   position: absolute;
+   top: 10px;
+   right: 40px;
+   display: none;
+   color:#fff;
+   svg{
+      width: 50px;
+      height: 50px;
+      
+   }
+   
+}
+.header{
+ width: 100%;
+   background: 
+   url('../images/dots2.png') no-repeat 0% 0%,
+   url('../images/dots1.png') no-repeat 55vw 10vw,
+   url('../images/dots2.png') no-repeat  70vw 10vw ,$color-gradient  ;
+   background-size: contain, 15%, 15%;
+  
+&__min{
+   @include flexbox($gap:20px);
+   padding: 40px 0;
+  
+  
+ }
+ &__logo-title{
+   font-size: 20px;
+   font-weight: 700;
+   line-height: 30px;
+   color:$color-ligt-bg;
+  
+   }
+ &__logo{
+   @include flexbox($gap:8px);
+ 
+   cursor: pointer;
+    &-img{
+   width: 30px;
+   height: 30px;
+}
+
+}
+ &__user{
+   @include flexbox($gap:40px);
+   p{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color:$color-ligt-bg;
+   }
+ }
+ &__login{
+   padding: 8px 37px;
+   background-color: $color-ligt-bg;
+   color:$color-green;
+   font-weight: 600px;
+   font-size: 16px;
+   line-height: 24px;
+ }
+ &__max{
+   @include flexbox;
+   background: url('../../images/homeimg.png') no-repeat 100%;
+   background-size: contain;
+    width: 100%;
+   min-height: 30vw;
+   }
+ &__info{
+   width: 50vw;
+   position: relative;
+   .header__link{
+      text-align: center;
+    
+   }
+  
+   & > .header__link::after{
+      content: url('../images/svg/arrow.svg');
+      display: inline-block;
+      width: 44px;
+      height: 44px;
+     transform: translate(130px, 18px);
+    
+     margin-bottom: 200px;
+     animation: rumahOpen 2s infinite alternate linear;
+     
+   }
+ }
+ &__title{
+   font-size: clamp(32px, 7vw, 52px);
+   font-weight: 700;
+   line-height:clamp(35px, 7vw, 72px);
+   color:$color-ligt-bg;
+   margin-bottom: clamp(20px, 7vw, 40px);
+   
+ }
+ &__link{
+   padding: 8px 37px;
+   background-color: $color-ligt-bg;
+   color:$color-green;
+   font-weight: 600px;
+   font-size: 16px;
+   line-height: 24px;
+   text-transform: uppercase;
+ }
+ &__text{
+  font-size: clamp(14px, 7vw, 16px);
+  font-weight: 700;
+  line-height: clamp(21px, 7vw, 24px);
+  color:$color-ligt-bg;
+  margin-bottom: clamp(20px, 7vw, 40px);
+  
+ }
+ 
+ 
+}
+
+
+
+.menu{
+
+   &__list{
+      @include flexbox;
+      position: relative;
+   }
+   &__link{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color:$color-ligt-bg;
+      transition: color .5s ease-in;
+      &:hover{
+         color: $color-green;
+      }
+      &.active{
+         font-weight: 600;
+         color: $color-green;
+      }
+   }
+}

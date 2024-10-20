@@ -1,0 +1,235 @@
+
+
+@media (max-width: 1080px){
+.swiper-button-next{
+   right: 30px;
+}
+.swiper-button-prev{
+   left: 30px;
+}
+.application__infobox{
+   gap: 30px;
+}
+.temukan__form{
+   grid-template-columns: 1fr 1fr !important;
+   padding: 10px 0 0 10px;
+}
+.temukan__button{
+ padding: 10px !important;
+ font-size: 30px !important;
+ line-height: 35px !important;
+} 
+}
+
+@media (max-width: 850px){
+   .burger, .clouse_menu{
+      display: block;
+   }
+    .menu{
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+      background-color: $color-green-ligt;
+      z-index: 5;
+      padding: 20px;
+     transform: translateY(-500px);
+     transition: transform 0.5s ease-in;
+     &.active{
+      transform: translateY(0px);
+     }
+     &__item{
+      margin-bottom: 40px;
+      padding: 5px;
+      
+     }
+     &__list{
+      display: block;
+      text-align: center;
+    }
+    }
+    .recomend__gallery{
+      grid-template-columns:  1fr 1fr;
+   }
+   .application__info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 30px;
+   }
+   .application__infobox{
+      display: block;
+      width: 100%;
+      padding: 10px;
+     
+   }
+   .application__form{
+      width: 100%;
+      padding: 20px;
+   }
+}
+@media(max-width:750px){
+   .header__info{
+    
+      padding: 10px;
+   }
+   .header__max {
+      display: block;
+     background: none;
+     width: 100%;
+    }
+    .container__right{
+      width: 100% !important;
+      margin: 0 auto !important;
+    
+    }
+    .header__info{
+      width: 100%;
+      padding: 0;
+    }
+    .infobox{
+      flex:40% 0 0;
+    }
+    .temukan__bg{
+      height: 80vw;
+    }
+    
+    .temukan__button{
+      font-size: 20px !important;
+      padding: 10px !important;
+      line-height: 24px !important;
+      
+      
+    }
+    .temukan__input{
+      padding: 10px 0;
+   
+   }
+    
+   }
+ 
+
+  @media (max-width: 600px){
+   .temukan__info{
+      width: 100% !important;
+   }
+   .temukan__form{
+      margin-left: 0;
+      padding: 0;
+   }
+  }
+@media(max-width:550px){
+   .recomend__gallery{
+     display: block;
+     
+   }
+   .recomend__card{
+      margin: 0 auto;
+   }
+   
+}
+@media (max-width: 500px){
+   .footer-menu__list{
+    display: block;
+   }
+   .footer-menu__item{
+    margin-bottom: 20px;
+   }
+   .footer__box{
+    justify-content: space-around;
+   }
+   .footer__logo-title{
+    font-size: 18px;
+   }
+    }
+@media (max-width: 480px){
+  
+.header__logo-title{
+   display: none;
+}
+.header__info>.header__link::after {
+   display: none;
+}
+.footer__box{
+   display: block;
+   text-align: center;
+}
+.footer__logo{
+   margin-bottom: 20px;
+}
+.footer__logo{
+   justify-content: center;
+}
+.temukan__btn,.temukan__input{
+   font-size: 16px !important;
+}
+
+
+.swiper-button-prev,
+.swiper-button-next{
+   transform: translateY(150px);
+}
+.application__info{
+   display: block;
+   margin-bottom: 15px;
+}
+.application__form input,
+.application__form button{
+   padding: 10px 15px;
+}
+.info__adres svg{
+   width: 18px;
+   height: 18px;
+}
+.info__sotial a svg{
+   width: 18px;
+   height: 18px;
+}
+.header__max{
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom:  20px;
+} 
+.container__right{
+   width: 100% !important;
+   margin: 0 !important;
+}
+.card{
+   padding: 20px;
+}
+}
+
+@media (max-width:440px){
+   .temukan__form{
+      grid-template-columns: 1fr !important;
+   }
+   .temukan__bg{
+      height: 100vh;
+    }
+    .temukan__form{
+      padding: 0 10px !important;
+     
+    }
+    .temukan__input{
+      text-align: center;
+      margin: 0 auto;
+    }
+    .future__title-box{
+      display: block;
+      text-align: center;
+    }
+    
+   }
+@media (max-width:350px){
+   .temukan__btn{
+      width: 100%;
+      margin-bottom: 10px !important;
+   }
+   #temukan1,
+   #temukan3,
+   .temukan__form{
+      border-radius: 0 0 0 0 !important;
+   }
+   
+}

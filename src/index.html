@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link type="image/x-icon" href="/favicon.ico" rel="shortcut icon" />
+    <link type="Image/x-icon" href="/favicon.ico" rel="icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Rumah Impian</title>
+  </head>
+  <body>
+    <dialog class="dialog">
+      <div class="dialog__iner">
+        <button class="close-modal btn-grin" type="button">
+          <svg>
+            <use xlink:href="../images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <form class="form" id="form-registre">
+          <legend class="form__legend">ada pertanyaan..?</legend>
+          <div>
+            <input
+              class="form__input"
+              type="text"
+              name="name"
+              id="username"
+              placeholder="Your neme"
+              required
+            />
+            <div class="error"></div>
+          </div>
+          <div>
+            <input
+              class="form__input"
+              id="password"
+              type="password"
+              name="password"
+              required
+            />
+            <div class="error"></div>
+          </div>
+          <button type="submit" class="btn-grin form__btn">Kirim</button>
+        </form>
+        <p class="send-message-reg"></p>
+      </div>
+    </dialog>
+    
+    <header class="header">
+      <div class="container">
+        <div class="header__min">
+          <a href="#" class="header__logo">
+            <img class="header__logo-img" src="./images/svg/logo.svg" />
+            <h4 class="header__logo-title">Rumah Impian</h4>
+          </a>
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <button class="clouse_menu">
+                <svg>
+                  <use xlink:href="../images/sprite.svg#close"></use>
+                </svg>
+              </button>
+              <li class="menu__item">
+                <a href="#" class="menu__link active">BRANDA</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">LAYANAN </a>
+              </li>
+              <li class="menu__item"><a href="#" class="menu__link">FITUR</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">KONTAK</a></li>
+            </ul>
+          </nav>
+          <div class="header__user">
+            <a href="#" class="header__link">MASUK</a>
+            <button class="burger">
+              <svg>
+                <use xlink:href="../images/sprite.svg#burger"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="container__right">
+        <div class="header__max">
+          <div class="header__info">
+            <h1 class="header__title animate-text">
+              Membantu Temukan Rumah Impian.
+            </h1>
+            <p class="header__text animate-text">
+              Rumah Impian hadir untuk temukan rumah terbaik untukmu, untuk di jual
+              ataupun di sewa dengan sumber terpercaya.
+            </p>
+            <a href="#" class="header__link">Temukan Rumah</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+
+    <section class="kami">
+
+      <div class="container">
+
+        <h2 class="kami__title animate-text">Layanan Kami</h2>
+
+        <p class="kami__text animate-text">Rumah impian hadir menjadi solusi bagi kamu</p>
+
+        <div class="kami__cards">
+
+          <div class="card animate">
+
+             <img src="./images/svg/house.svg" alt="hause" class="card__img">
+
+             <h3 class="card__title">
+
+                Property Baru
+
+             </h3>
+
+             <p class="card__text">
+
+                Rumah impian kini jadi kenyataan, Beli 
+
+                rumah bary dengan fasilitas terbaik
+
+                dengan lingkungan yang nyaman.
+
+             </p>
+
+          </div>
+
+             <div class="card animate">
+
+                <img src="./images/svg/assets 1.svg" alt="assets" class="card__img">
+
+                <h3 class="card__title">
+
+                   Sewa Rumah
+
+                </h3>
+
+                <p class="card__text">
+
+                   Sewa rumah yang indah untuk keluarga 
+
+                   anda, pilihan terbaik untuk tempat 
+
+                   tinggal keluarga mu.
+
+                </p>
+
+             </div>
+
+                <div class="card animate">
+
+                   <img src="./images/svg/town.svg" alt="town" class="card__img">
+
+                   <h3 class="card__title">
+
+                      Beli Rumah
+
+                   </h3>
+
+                   <p class="card__text">
+
+                      Beli Rumah sempurna dengan harga 
+
+                      terbaik kualitas terjamin dari sumber 
+
+                      terpercaya.
+
+                   </p>
+
+          
+
+        
+
+      </div>
+
+    </section>
+
+    
+    <section class="temukan animate">
+      <div class="container">
+        <picture>
+          <source type="imege/avif" srcset="./images/living-room.avif" />
+          <source type="imege/webp" srcset="./images/living-room.webp" />
+    
+          <img
+            src="./images/living-room.jpg"
+            alt="livingroom"
+            class="temukan__bg"
+          />
+        </picture>
+        <div class="temukan__info center">
+          <div class="infobox">
+            <h2 class="temukan__title">Temukan Rumah Impianmu</h2>
+            <p class="temukan__text">
+              sekarang Anda dapat menghemat semua hal stres, waktu, dan biaya
+              tersembunyi, dengan ratusan rumah untuk anda
+            </p>
+          </div>
+          <div>
+            <button class="temukan__btn active" id="temukan1">Jual</button>
+            <button class="temukan__btn" id="temukan2">Sewa</button>
+            <button class="temukan__btn" id="temukan3">Property Baru</button>
+            <form
+              action=""
+              class="temukan__form focus"
+              id="temukan__form1"
+              method="get"
+            >
+              <fieldset class="temukan__input">
+                <img src="./images/svg/home.svg" alt="home" />
+                <select name="TipeRumah" required>
+                  <option value="">Tipe Rumah</option>
+                  <option value="value1">Tipe Rumah 1</option>
+                  <option value="value2">Tipe Rumah 2</option>
+                  <option value="value3">Tipe Rumah 3</option>
+                </select>
+              </fieldset>
+              <fieldset class="temukan__input">
+                <img src="./images/svg/range.svg" alt="range" />
+                <select name="RangeHarga" required>
+                  <option value="">Range Harga</option>
+                  <option value="value1">20000$</option>
+                  <option value="value2">50000$</option>
+                  <option value="value3">100000$</option>
+                </select>
+              </fieldset>
+              <textarea
+                class="temukan__input"
+                name="info"
+                rows="1"
+                placeholder="Cari berdasarkam"
+              ></textarea>
+              <button class="temukan__button btn-grin">Cari</button>
+            </form>
+            <form
+              action=""
+              class="temukan__form nofocus"
+              id="temukan__form2"
+              method="get"
+            >
+              <fieldset class="temukan__input">
+                <img src="./images/svg/home.svg" alt="home" />
+                <select name="Sewa" required>
+                  <option value="">Sewa</option>
+                  <option value="value1">Sewa Rumah 1</option>
+                  <option value="value2">Sewa Rumah 2</option>
+                  <option value="value3">Sewa Rumah 3</option>
+                </select>
+              </fieldset>
+              <fieldset class="temukan__input">
+                <img src="./images/svg/range.svg" alt="range" />
+                <select name="RangeHarga" required>
+                  <option value="">Range Harga</option>
+                  <option value="value1">200$</option>
+                  <option value="value2">500$</option>
+                  <option value="value3">1000$</option>
+                </select>
+              </fieldset>
+              <textarea
+                class="temukan__input"
+                name="info"
+                rows="1"
+                placeholder="Cari berdasarkam "
+              ></textarea>
+              <button class="temukan__button btn-grin">Cari</button>
+            </form>
+            <form
+              action=""
+              class="temukan__form nofocus"
+              id="temukan__form3"
+              method="get"
+            >
+              <fieldset class="temukan__input">
+                <img src="./images/svg/home.svg" alt="home" />
+                <select name="PropertBaru" required>
+                  <option value="">PropertBaru</option>
+                  <option value="value1">PropertBaru 1</option>
+                  <option value="value2">PropertBaru 2</option>
+                  <option value="value3">PropertBaru 3</option>
+                </select>
+              </fieldset>
+              <fieldset class="temukan__input">
+                <img src="./images/svg/range.svg" alt="range" />
+                <select name="RangeHarga" required>
+                  <option value="">Range Harga</option>
+                  <option value="value1">20000$</option>
+                  <option value="value2">50000$</option>
+                  <option value="value3">100000$</option>
+                </select>
+              </fieldset>
+              <textarea
+                class="temukan__input"
+                name="info"
+                placeholder="Cari berdasarkam "
+              ></textarea>
+              <button class="btn-grin temukan__button">Cari</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="recomend">
+      <div class="container">
+        <h2 class="recomend__title animate-text">Rekomendasi Rumah Untuk Mu</h2>
+        <div class="recomend__gallery">
+          <div class="recomend__card animate">
+            <picture>
+              <source type="imege/avif" srcset="./images/hause1.avif" />
+              <source type="imege/webp" srcset="./images/hause1.webp" />
+              <img
+                src="./images/hause1.jpg"
+                alt="room1"
+                class="recomend__img"
+              />
+            </picture>
+            <p class="recomend__cost">IDR.200.000.000</p>
+            <p class="recomend__adress">Jl. Soekarno Hatta No.1</p>
+            <p class="recomend__headings">Sewa</p>
+            <div class="recomend__icons">
+              <div class="icon__box">
+                <div class="box">
+                  <img src="./images/svg/bed.svg" alt="bedroom" />
+                  <p class="bedroom">3</p>
+                </div>
+                <p>Kamar Tidur</p>
+              </div>
+              <div class="icon__box">
+                <div class="box">
+                  <img src="./images/svg/shower.svg" alt="showeroom" />
+                  <p class="shower">4</p>
+                </div>
+                <p>Kamar Mandi</p>
+              </div>
+              <div class="icon__box">
+                <div class="box">
+                  <img src="./images/svg/globe.svg" alt="Luas Rumah" />
+                  <p class="rumah">360m</p>
+                </div>
+                <p>Luas Rumah</p>
+              </div>
+            </div>
+          </div>
+          <div class="recomend__card animate">
+            <picture>
+              <source type="imege/avif" srcset="./images/hause2.avif" />
+              <source type="imege/webp" srcset="./images/hause2.webp" />
+              <img
+                src="./images/hause2.jpg"
+                alt="room1"
+                class="recomend__img"
+              />
+            </picture>
+            <p class="recomend__cost">IDR.200.000.000</p>
+            <p class="recomend__adress">Jl. Soekarno Hatta No.1</p>
+            <p class="recomend__headings">Jual</p>
+            <div class="recomend__icons">
+              <div class="icon__box">
+                <div class="box">
+                  <img src="./images/svg/bed.svg" alt="bedroom" />
+                  <p class="bedroom">3</p>
+                </div>
+                <p>Kamar Tidur</p>
+              </div>
+              <div class="icon__box">
+                <div class="box">
+                  <img src="./images/svg/shower.svg" alt="showeroom" />
+                  <p class="shower">4</p>
+                </div>
+                <p>Kamar Mandi</p>
+              </div>
+              <div class="icon__box">
+                <div class="box">
+                  <img src="./images/svg/globe.svg" alt="Luas Rumah" />
+                  <p class="rumah">360m</p>
+                </div>
+                <p>Luas Rumah</p>
+              </div>
+            </div>
+          </div>
+          <div class="recomend__card animate">
+            <picture>
+              <source type="imege/avif" srcset="./images/hause3.avif" />
+              <source type="imege/webp" srcset="./images/hause3.webp" />
+              <img
+                src="./images/hause3.jpg"
+                alt="room1"
+                class="recomend__img"
+              />
+            </picture>
+            <p class="recomend__cost">IDR.200.000.000</p>
+            <p class="recomend__adress">Jl. Soekarno Hatta No.1</p>
+            <p class="recomend__headings">Property Baru</p>
+            <div class="recomend__icons">
+              <div class="icon__box">
+                <div class="box">
+                  <img src="./images/svg/bed.svg" alt="bedroom" />
+                  <p class="bedroom">3</p>
+                </div>
+                <p>Kamar Tidur</p>
+              </div>
+              <div class="icon__box">
+                <div class="box">
+                  <img src="./images/svg/shower.svg" alt="showeroom" />
+                  <p class="shower">4</p>
+                </div>
+                <p>Kamar Mandi</p>
+              </div>
+              <div class="icon__box">
+                <div class="box">
+                  <img src="./images/svg/globe.svg" alt="Luas Rumah" />
+                  <p class="rumah">360m</p>
+                </div>
+                <p>Luas Rumah</p>
+              </div>
+            </div>
+          </div>
+          <div class="recomend__card animate">
+            <picture>
+              <source type="imege/avif" srcset="./images/hause4.avif" />
+              <source type="imege/webp" srcset="./images/hause4.webp" />
+              <img
+                src="./images/hause4.jpg"
+                alt="room1"
+                class="recomend__img"
+              />
+            </picture>
+            <p class="recomend__cost">IDR.200.000.000</p>
+            <p class="recomend__adress">Jl. Soekarno Hatta No.1</p>
+            <p class="recomend__headings">Sewa</p>
+            <div class="recomend__icons">
+              <div class="icon__box">
+                <div class="box">
+                  <img src="./images/svg/bed.svg" alt="bedroom" />
+                  <p class="bedroom">3</p>
+                </div>
+                <p>Kamar Tidur</p>
+              </div>
+              <div class="icon__box">
+                <div class="box">
+                  <img src="./images/svg/shower.svg" alt="showeroom" />
+                  <p class="shower">4</p>
+                </div>
+                <p>Kamar Mandi</p>
+              </div>
+              <div class="icon__box">
+                <div class="box">
+                  <img src="./images/svg/globe.svg" alt="Luas Rumah" />
+                  <p class="rumah">360m</p>
+                </div>
+                <p>Luas Rumah</p>
+              </div>
+            </div>
+          </div>
+          <div class="recomend__card animate">
+            <picture>
+              <source type="imege/avif" srcset="./images/hause5.avif" />
+              <source type="imege/webp" srcset="./images/hause5.webp" />
+              <img
+                src="./images/hause5.jpg"
+                alt="room1"
+                class="recomend__img"
+              />
+            </picture>
+            <p class="recomend__cost">IDR.200.000.000</p>
+            <p class="recomend__adress">Jl. Soekarno Hatta No.1</p>
+            <p class="recomend__headings">Sewa</p>
+            <div class="recomend__icons">
+              <div class="icon__box">
+                <div class="box">
+                  <img src="./images/svg/bed.svg" alt="bedroom" />
+                  <p class="bedroom">3</p>
+                </div>
+                <p>Kamar Tidur</p>
+              </div>
+              <div class="icon__box">
+                <div class="box">
+                  <img src="./images/svg/shower.svg" alt="showeroom" />
+                  <p class="shower">4</p>
+                </div>
+                <p>Kamar Mandi</p>
+              </div>
+              <div class="icon__box">
+                <div class="box">
+                  <img src="./images/svg/globe.svg" alt="Luas Rumah" />
+                  <p class="rumah">360m</p>
+                </div>
+                <p>Luas Rumah</p>
+              </div>
+            </div>
+          </div>
+          <div class="recomend__card animate">
+            <picture>
+              <source type="imege/avif" srcset="./images/hause6.avif" />
+              <source type="imege/webp" srcset="./images/hause6.webp" />
+              <img
+                src="./images/hause6.jpg"
+                alt="room1"
+                class="recomend__img"
+              />
+            </picture>
+            <p class="recomend__cost">IDR.200.000.000</p>
+            <p class="recomend__adress">Jl. Soekarno Hatta No.1</p>
+            <p class="recomend__headings">Sewa</p>
+            <div class="recomend__icons">
+              <div class="icon__box">
+                <div class="box">
+                  <img src="./images/svg/bed.svg" alt="bedroom" />
+                  <p class="bedroom">3</p>
+                </div>
+                <p>Kamar Tidur</p>
+              </div>
+              <div class="icon__box">
+                <div class="box">
+                  <img src="./images/svg/shower.svg" alt="showeroom" />
+                  <p class="shower">4</p>
+                </div>
+                <p>Kamar Mandi</p>
+              </div>
+              <div class="icon__box">
+                <div class="box">
+                  <img src="./images/svg/globe.svg" alt="Luas Rumah" />
+                  <p class="rumah">360m</p>
+                </div>
+                <p>Luas Rumah</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="loading">Lihat Lainnya...</button>
+      </div>
+    </section>
+    
+    <section class="future animate">
+      <div class="container__right">
+        <div class="future__title-box">
+          <h2>Fitur Rumah</h2>
+          <button class="btn-grin future__btn">Lihat Semua..</button>
+        </div>
+    
+        <div class="swiper__box">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <picture>
+                   <source type="imege/avif" srcset="./images/room1.avif">
+                   <source type="imege/webp" srcset="./images/room1.webp">
+             
+                   <img src="./images/room1.jpg" alt="livingroom" class="temukan__bg">
+                 </picture>
+                 <div class="curtains">
+                   <h3> Kamar Tidur</h3>
+                   <p>Rumah minimalist Type-A2</p>
+                   <h4>IDR.200jt</h4>
+                   <button class="btn-grin">Lihat Rumah</button>
+                 </div>
+                </div>
+                <div class="swiper-slide">
+                   <picture>
+                      <source type="imege/avif" srcset="./images/room2.avif">
+                      <source type="imege/webp" srcset="./images/room2.webp">
+                
+                      <img src="./images/room2.jpg" alt="livingroom" class="temukan__bg">
+                    </picture>
+                    <div class="curtains">
+                      <h3>Kamar Tidur</h3>
+                      <p>Rumah minimalist Type-A2</p>
+                      <h4>IDR.200jt</h4>
+                      <button class="btn-grin">Lihat Rumah</button>
+                    </div>
+                   </div>
+                   <div class="swiper-slide">
+                      <picture>
+                         <source type="imege/avif" srcset="./images/room3.avif">
+                         <source type="imege/webp" srcset="./images/room3.webp">
+                   
+                         <img src="./images/room3.jpg" alt="livingroom" class="temukan__bg">
+                       </picture>
+                       <div class="curtains">
+                         <h3>Kamar Tidur</h3>
+                         <p>Rumah minimalist Type-A2</p>
+                         <h4>IDR.200jt</h4>
+                         <button class="btn-grin">Lihat Rumah</button>
+                       </div>
+                      </div>
+                      <div class="swiper-slide">
+                         <picture>
+                            <source type="imege/avif" srcset="./images/room4.avif">
+                            <source type="imege/webp" srcset="./images/room4.webp">
+                      
+                            <img src="./images/room4.jpg" alt="livingroom" class="temukan__bg">
+                          </picture>
+                          <div class="curtains">
+                            <h3>Kamar Tidur</h3>
+                            <p>Rumah minimalist Type-A2</p>
+                            <h4>IDR.200jt</h4>
+                            <button class="btn-grin">Lihat Rumah</button>
+                          </div>
+                         </div>
+                         <div class="swiper-slide">
+                            <picture>
+                               <source type="imege/avif" srcset="./images/room1.avif">
+                               <source type="imege/webp" srcset="./images/room1.webp">
+                         
+                               <img src="./images/room1.jpg" alt="livingroom" class="temukan__bg">
+                            </picture>
+                             <div class="curtains">
+                               <h3>Kamar Tidur</h3>
+                               <p>Rumah minimalist Type-A2</p>
+                               <h4>IDR.200jt</h4>
+                               <button class="btn-grin">Lihat Rumah</button>
+                             </div>
+                         </div>
+                            <div class="swiper-slide">
+                               <picture>
+                                  <source type="imege/avif" srcset="./images/room2.avif">
+                                  <source type="imege/webp" srcset="./images/room2.webp">
+                            
+                                  <img src="./images/room2.jpg" alt="livingroom" class="temukan__bg">
+                                </picture>
+                                <div class="curtains">
+                                  <h3>Kamar Tidur</h3>
+                                  <p>Rumah minimalist Type-A2</p>
+                                  <h4>IDR.200jt</h4>
+                                  <button class="btn-grin">Lihat Rumah</button>
+                                </div>
+                               </div>
+                               <div class="swiper-slide">
+                                  <picture>
+                                     <source type="imege/avif" srcset="./images/room3.avif">
+                                     <source type="imege/webp" srcset="./images/room3.webp">
+                               
+                                     <img src="./images/room3.jpg" alt="livingroom" class="temukan__bg">
+                                   </picture>
+                                   <div class="curtains">
+                                     <h3>Kamar Tidur</h3>
+                                     <p>Rumah minimalist Type-A2</p>
+                                     <h4>IDR.200jt</h4>
+                                     <button class="btn-grin">Lihat Rumah</button>
+                                   </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                     <picture>
+                                        <source type="imege/avif" srcset="./images/room4.avif">
+                                        <source type="imege/webp" srcset="./images/room4.webp">
+                                  
+                                        <img src="./images/room4.jpg" alt="livingroom" class="temukan__bg">
+                                      </picture>
+                                      <div class="curtains">
+                                        <h3>Kamar Tidur</h3>
+                                        <p>Rumah minimalist Type-A2</p>
+                                        <h4>IDR.200jt</h4>
+                                        <button class="btn-grin">Lihat Rumah</button>
+                                      </div>
+                                     </div>
+              
+            </div>
+           
+    
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+    
+           
+        </div>
+       </div>
+    </section>
+    
+    <section class="application">
+      <picture>
+        <source type="imege/avif" srcset="./imeges/living-room1.avif" />
+        <source type="imege/webp" srcset="./imeges/living-room1.webp" />
+        <source type="imege/jpeg" srcset="./living-room1.jpg" />
+        <img
+          src="./images/living-room1.jpg"
+          alt="living-room"
+          class="application__img"
+        />
+      </picture>
+      <div class="application__infobox center">
+        <div class="application__info animate">
+          <h2 class="application__title">
+            Butuh Konsultasi..? Silahkan kontak kami Kami Siap Membantu
+          </h2>
+          <div>
+            <h3 class="info__title">Kontak</h3>
+            <ul class="info__list">
+              <li class="info__adres">
+                <svg>
+                  <use xlink:href="../images/sprite.svg#adres"></use>
+                </svg>
+                <p>Jl. Pelajar Pejuang 123 Majalaya Bandung Indonesia</p>
+              </li>
+              <li class="info__adres">
+                <svg class="svg">
+                  <use xlink:href="../images/sprite.svg#phone"></use>
+                </svg>
+                <a href="tel:02265452041">022-6545-2041</a>
+              </li>
+              <li class="info__adres">
+                <svg>
+                  <use xlink:href="../images/sprite.svg#email"></use>
+                </svg>
+                <a href="mailto:rumahimpian@gmail.com">rumahimpian@gmail.com</a>
+              </li>
+            </ul>
+            <h3 class="info__title">Social Media</h3>
+            <div class="info__sotial">
+              <a href="#">
+                <svg>
+                  <use xlink:href="../images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg>
+                  <use xlink:href="../images/sprite.svg#twiter"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg>
+                  <use xlink:href="../images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+              <a href="#">Rumahimpian</a>
+            </div>
+          </div>
+        </div>
+        <form class="application__form animate" id="footer-form">
+          <legend>ada pertanyaan..?</legend>
+          <div>
+            <input
+              type="email"
+              name="email"
+              class="application__input"
+              id="email"
+              placeholder="Email"
+            />
+            <div class="error"></div>
+          </div>
+    
+          <div>
+            <input
+              type="text"
+              class="application__input"
+              id="name"
+              name="name"
+              placeholder="Name"
+            />
+            <div class="error"></div>
+          </div>
+          <button type="submit" class="btn-grin">Kirim</button>
+          <p class="send-massege"></p>
+        </form>
+      </div>
+    </section>
+    
+
+    <footer class="footer">
+
+      <div class="container">
+
+        <div class="footer__box">
+
+          <a href="#" class="footer__logo">
+
+            <img class="footer__logo-img" src="./images/svg/footer-logo.svg" />
+
+            <h4 class="footer__logo-title">Rumah Impian</h4>
+
+          </a>
+
+          <nav class="footer__menu">
+
+            <ul class="footer-menu__list">
+
+              <li class="footer-menu__item">
+
+                <a href="#" class="footer-menu__link">Branda</a>
+
+              </li>
+
+              <li class="footer-menu__item">
+
+                <a href="#" class="footer-menu__link">Layanan </a>
+
+              </li>
+
+              <li class="footer-menu__item">
+
+                <a href="#" class="footer-menu__link">Fitur </a>
+
+              </li>
+
+              <li class="footer-menu__item">
+
+                <a href="#" class="footer-menu__link">Kontak</a>
+
+              </li>
+
+            </ul>
+
+          </nav>
+
+        </div>
+
+        <p class="copy">Copyright bg Creative Academy All Right Reserved.</p>
+
+      </div>
+
+    </footer>
+
+    
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

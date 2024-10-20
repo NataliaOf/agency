@@ -1,0 +1,57 @@
+@import 'viriables.scss';
+@import 'animation.scss';
+
+
+.kami{
+  background-color: $color-ligt-bg;
+  padding:clamp(30px, 5vw, 100px) 0;
+  text-align: center;
+  &__title{
+  
+   margin-bottom: 19px;
+  }
+  &__text{
+   font-size: clamp(16px, 5vw, 18px);
+   font-weight: 400;
+   line-height: 27px;
+   margin-bottom:clamp(30px, 5vw, 46px);
+  }
+  &__cards{
+   display: flex;
+   justify-content: center;
+   gap:20px;
+   flex-wrap: wrap;
+  }
+}
+
+.card{
+   max-width: 380px;
+   padding: 55px;
+   text-align: center;
+   color: $color-text;
+   background-color: $color-menu;
+   transition: all 0.5s ease-in;
+   &__img{
+      width: 57px;
+      margin-bottom: 13px;
+   }
+   &__title{
+    color:$color-green-ligt;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    margin-bottom: 13px;
+   transition: color 0.5s ease-in;
+   }
+   &__text{
+     line-height: 21px;
+
+   }
+   &:hover{
+      background: $color-green-ligt;
+      color:$color-ligt-bg;
+      & h3{
+         color: $color-ligt-bg;
+      }
+   }
+}

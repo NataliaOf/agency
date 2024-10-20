@@ -1,0 +1,126 @@
+@import 'viriables.scss';
+
+
+@font-face {
+   font-family: $font-stack;
+   src: url("../fonts/Poppins-Regular.woff2") format('woff2');
+   font-weight: 400;
+   font-style: normal;
+   font-display:swap;
+}
+@font-face {
+   font-family: $font-stack;
+   src: url("../fonts/Poppins-SemiBold.woff2") format('woff2');
+   font-weight: 600;
+   font-style: normal;
+   font-display:swap;
+}
+
+@font-face {
+   font-family: $font-stack;
+   src: url("../fonts/Poppins-Bold.woff2") format('woff2');
+   font-weight: 700;
+   font-style: normal;
+   font-display:swap;
+}
+html{
+   scrollbar-gutter: stable;
+}
+body{
+   font-family: $font-stack;
+   font-size: 14px;
+   line-height: 21px;
+   background-color: $color-ligt-bg;
+   min-height: 100vh;
+   color:$color-text;
+   padding: 5px;
+  scrollbar-gutter: stable;
+}
+
+.container{
+   max-width: 1200px;
+   width: 90vw;
+   margin: 0 auto;
+   position: relative;
+
+}
+.container__right{
+   max-width: 1350px;
+   width: 95vw;
+   margin: 0 0 0 auto ;
+   position: relative;
+}
+
+h2{
+   color: $color-green-ligt;
+   font-size: clamp(25px, 5vw, 48px);
+  
+   font-weight: 600;
+   line-height: clamp(28px, 5vw, 72px);
+
+}
+
+.loading{
+  padding: 8px 10px;
+font-size: 18px;
+font-weight: 400;
+line-height: 27px;
+text-align: center;
+animation: loadingMove 2s infinite alternate linear;
+}
+.center{
+   position: absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%, -50%);
+}
+.btn-grin{
+   color: $color-ligt-bg;
+   background-color: $color-green-ligt;
+  
+   text-align: center;
+}
+textarea{
+   flex: 400px 1 1;
+   resize: none;
+   overflow: auto;
+   overflow: hidden;
+   &:focus{
+      outline: none;
+   }
+   &::placeholder{
+      color:$color-green-ligt;
+   }
+}
+select:focus{
+    outline: none;
+}
+
+form{
+   background-color: $color-ligt-bg;
+   display: flex;
+   flex-direction: column;
+}
+legend{
+   color:$color-green-ligt;
+}
+input{
+   background-color:#C4C4C4;
+   &:focus{
+      border: 1px solid $color-green-ligt;
+       }
+       &.invalid{
+        border: 1px solid red;
+       }
+    &.valid{
+        border: 1px solid $color-green-ligt;
+       }
+
+
+}
+
+.error{
+   color: red;
+   font-size: 18px;
+}
+

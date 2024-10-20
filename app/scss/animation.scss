@@ -1,0 +1,54 @@
+.animate{
+&.activ-anim{
+   animation: exid 1s ease-in;
+}
+}
+
+.animate-text{
+   &.activ-anim{
+      animation: titleMove 1s ease-in;
+   }
+   }
+
+
+@keyframes rumahOpen {
+   from{
+      transform: translate(130px,18px);
+   }
+   to{
+      transform: translate(160px, 18px);
+   }
+}
+
+@keyframes loadingMove {
+   from{
+      transform: translateX(0px);
+   }
+   to{
+      transform: translate(30px);
+   }
+}
+
+@keyframes titleMove {
+   from{
+      transform: translateX(-700px);
+   }
+   to{
+      transform: translate(0px);
+   }
+}
+
+
+@keyframes exid {
+   0%{
+  transform: scale(0);
+  opacity: 0;
+   }
+   100%{
+      transform: scale(1);
+      opacity: 1;
+   }
+}
+
+
+

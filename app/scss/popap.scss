@@ -1,0 +1,70 @@
+
+@import 'viriables.scss';
+@import 'mixin.scss';
+@import 'global.scss';
+.dialog{
+   position:fixed;
+   margin: 0;
+   width: 400px;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.dialog::backdrop{
+   background-color: rgb(0 0 0 / 0.8);
+}
+.dialog__iner{
+   padding: 10px;
+   text-align: center;
+   p{
+      margin-bottom: 50px;
+   }
+}
+
+.close-modal{
+   
+   padding: 5px;
+   position: absolute;
+   top: 20px;
+   right: 20px;
+   svg{
+      width: 30px;
+      height: 30px;
+   }
+}
+
+.scroll-block{
+   overflow: hidden;
+}
+
+.form{
+   
+   width: 100%;
+   
+   gap: 18px;
+   padding: 40px;
+
+   &__legend{
+     
+      font-size: clamp(30px, 5vw, 40px);
+   font-weight: 600;
+   line-height: clamp(40px, 5vw, 60px);
+   }
+
+   &__input{
+     width: 100%;
+         padding: 30px 35px;
+    
+   }
+
+   &__btn{
+      font-size: 24px;
+      font-weight: 600;
+      padding: 30px 35px;
+
+   }
+}
+
+.send-message-reg{
+   color: $color-green-ligt;
+}

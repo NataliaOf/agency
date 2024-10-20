@@ -1,0 +1,74 @@
+@import "viriables.scss";
+.recomend{
+   padding: clamp(40px, 5vw, 100px) 0 clamp(40px, 5vw, 75px) 0;
+   
+   text-align: center;
+   &__title{
+   
+    margin-bottom:clamp(20px, 5vw, 44px);
+   }
+   &__gallery{
+     
+      display: grid;
+      grid-template-columns:  1fr 1fr 1fr;
+      gap: 20px;
+  
+   }
+   &__card{
+      background: #fff;
+      max-width: 380px;
+      text-align: left;
+      border-radius: 5px;
+      padding: 5px;
+      &:hover{
+         background: $color-gradient;
+      }
+      &:hover .recomend__icons{
+         background: #fff;
+      }
+     
+   }
+   &__img{
+      width: 100%;
+      margin-bottom: 7px;
+   }
+   &__cost{
+      
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    margin: 0 20px;
+
+   }
+   &__adress{
+     font-size: 14px;
+     font-weight: 400;
+     line-height: 21px;
+     margin: 0 20px;
+
+   }
+   &__headings{
+      color:#FF0000;
+       font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+      margin:0 20px 30px 20px;
+
+   }
+   &__icons{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 15px 0;
+      margin: 0 -5px;
+      margin-bottom: 35px;
+   
+   }
+}
+
+.box{
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   gap: 5px;
+}

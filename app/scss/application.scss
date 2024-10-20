@@ -1,0 +1,114 @@
+@import 'viriables.scss';
+@import 'mixin.scss';
+@import 'global.scss';
+
+.application{
+position: relative;
+   &__img{
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+
+      filter: brightness(0.5);
+   }
+
+   &__infobox{
+      width: 80%;
+     
+     @include flexbox($gap:150px);
+   }
+   &__info{
+     width: 40%;
+   
+   }
+   &__title{
+      color: $color-green-ligt;
+      font-family: Poppins;
+      font-size: clamp(30px, 5vw, 40px);
+      font-weight: 600;
+      line-height: clamp(40px, 5vw, 60px);
+      margin-bottom: 20px;
+  
+   }
+   &__form{
+      
+      width: 50%;
+      
+      gap: 18px;
+      padding: 50px 45px;
+      legend{
+         font-size: clamp(30px, 5vw, 40px);
+         font-weight: 600;
+         line-height: clamp(40px, 5vw, 60px);
+       }
+       input{
+         width: 100%;
+         padding: 30px 35px;
+       }
+       button{
+         font-size: 24px;
+         font-weight: 600;
+         padding: 30px 35px;
+       }
+   }
+   
+}
+
+.info{
+
+   &__title{
+      color: $color-ligt-bg;
+      font-family: Poppins;
+       font-size: 18px;
+       font-weight: 600;
+       line-height: 27px;
+       margin-bottom: 14px;
+     
+
+   }
+   &__list{
+      margin-bottom: 20px;
+   }
+   &__adres{
+      height: auto;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 7px;
+      margin-bottom: 12px;
+      svg{
+       width: 24px;
+       height: 24px;
+      }
+      & > a, & > p{
+       color: $color-ligt-bg;
+       font-family: Poppins;
+       font-size: 16px;
+       font-weight: 400;
+       line-height: 18px;
+
+
+      }
+     }  
+     &__sotial{
+     
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 18px;
+     a{
+      color:$color-ligt-bg;
+      svg{
+      
+         width: 24px;
+         height: 24px;
+      }
+     }
+     
+     
+     }
+}
+
+.send-massege{
+   color:$color-green-ligt;
+}

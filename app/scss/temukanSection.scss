@@ -1,0 +1,99 @@
+@import 'viriables.scss';
+@import 'global.scss';
+.temukan{
+
+   &__bg{
+      width: 100%;
+      object-fit: cover;
+   }
+   &__info{
+   width: 70%;
+      margin: 0 auto;
+     text-align: center;
+      color:$color-ligt-bg;
+      
+      &>div{
+         text-align: left;
+      }
+   }
+   &__title{
+      color:$color-ligt-bg;
+      text-align: center;
+    font-size: clamp(38px, 3vw, 48px);
+    font-weight: 600;
+    line-height: clamp(50px, 3vw,72px) ;
+
+
+   }
+   &__text{
+      text-align: center;
+     font-size:clamp(18px, 3vw, 24px);
+     font-weight: 400;
+     line-height: clamp(24px, 3vw, 36px);
+     margin-bottom: clamp(30px, 3vw, 60px);
+
+   }
+   &__btn{
+      padding:  8px 24px;
+      background-color:  rgba(255, 255, 255, 0.6);
+      color: $color-text;
+      margin: 0 -2px !important;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
+      text-align: center; 
+      &.active{
+         background-color: rgba(255, 255, 255, 0.8);
+         color:$color-green-ligt;
+      }
+   }
+   &__form{
+      
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 150px;
+     align-items: center;
+     
+      gap: 10px;
+      padding-left:  24px;
+      margin-left: -2px;
+      background-color:  rgba(255, 255, 255, 0.6);
+      color:$color-green-ligt;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
+      
+      border-bottom-left-radius: 9px;
+      &.focus{
+         background-color: rgba(255, 255, 255, 0.8);
+      }
+      &.nofocus{
+         display: none;
+      }
+
+   }
+   &__button{
+     height: 100%;
+     padding: 17px 30px;
+     font-size: 36px;
+     font-weight: 500;
+     line-height: 54px;
+     
+
+   }
+   &__input{
+      display: flex;
+      align-items: center;
+      flex: 180px 1 1;
+      &>img{
+         width: 25px;
+         height: 25px;
+      }
+   }
+}
+
+#temukan1{
+   border-top-left-radius: 9px;
+}
+#temukan3{
+   border-top-right-radius: 9px;
+}
