@@ -135,8 +135,8 @@ function styles() {
  }
 
  function cleanDist(done){
-   if(fs.existsSync('./crs')){
-      return src('./crs').pipe(clean());
+   if(fs.existsSync('./src')){
+      return src('./src').pipe(clean());
    }
    done()
    }
